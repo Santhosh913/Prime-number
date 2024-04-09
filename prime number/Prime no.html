@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script> 
+    function PrimeNo()
+
+    {
+
+         var i,apple=0
+         var n=prompt("Enter a number");
+         for(i=1;i<=n;i++)
+
+         {
+
+               if(n%i==0)
+               {
+                 apple+=1;
+
+               }
+         }
+
+         if(apple==2)
+         { document.write(n+" is a prime number"); }
+
+         else 
+
+         { document.write(n+" is not a prime number");}
+
+
+    }
+    
+    </script>
+    <form> 
+        <input type="button" value="prime number"  onclick="PrimeNo();">
+      </form>
+    
+</body>
+</html>
